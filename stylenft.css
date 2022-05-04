@@ -1,0 +1,186 @@
+html {
+    block-size: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(217, 54%, 11%);
+    block-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    user-select: none;
+}
+
+main {
+    block-size: 32rem;
+    inline-size: 18.5rem;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 9.25rem);
+    grid-template-rows: 18rem 2.8rem 1.5rem 2.8rem 2.8rem 3.6rem;
+    box-shadow: 0rem 1rem 1.5rem 0rem #0c1729;
+}
+
+.nft {
+    block-size: 16.4rem;
+    inline-size: 16rem;
+    margin-left: 1.2rem;
+    margin-top: 1.3rem;
+    border-radius: 0.5rem;
+    z-index: 5;
+    position: absolute;
+}
+
+h1 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    color: hsl(0, 0%, 100%);
+    margin-left: 1.3rem;
+    margin-top: 1.2rem;
+    font-family: "Outfit";
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: "Outfit";
+}
+
+.p-uno {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    margin-left: 1.3rem;
+}
+
+.p-dos {
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+    margin-left: 1.3rem;
+}
+
+.ether {
+    display: flex;
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    margin-left: 1.3rem;
+}
+
+.logo-ether {
+    block-size: 1.2rem;
+    inline-size: 0.7rem;
+    margin-top: 0.8rem;
+}
+
+.precio {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    color: hsl(178, 100%, 50%);
+    margin-left: 0.5rem;
+    font-weight: 400;
+}
+
+.time {
+    display: flex;
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    margin-left: 2.4rem;
+}
+
+.reloj {
+    block-size: 1.1rem;
+    inline-size: 1.1rem;
+    margin-top: 0.9rem;
+}
+
+.days {
+    margin-left: 0.4rem;
+    font-weight: 400;
+}
+
+.linea {
+   border-top: 1px solid hsl(215, 32%, 27%);
+   block-size: 1rem;
+   inline-size: 85%;
+   grid-row: 6 / 7;
+   grid-column: 1 / 3;
+   margin: 0.3rem auto 0 auto;
+}
+
+.avatar {
+    block-size: 2rem;
+    inline-size: 2rem;
+    border-image: white;
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    padding-left: 0.025rem;
+}
+
+.borde {
+    background-color: white;
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
+    block-size: 2.1rem;
+    inline-size: 2.1rem;
+    margin-top: 1rem;
+    margin-left: 1.3rem;
+    border-radius: 1rem;
+    display: flex;
+   
+}
+
+.name {
+    grid-row: 6 / 7;
+    grid-column: 1 / 3;
+    margin-top: 1.5rem;
+    margin-left: 4.3rem;
+}
+
+span {
+    color: white;
+}
+
+.view {
+    display: none;
+}
+.contImg {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+
+@media (min-width: 1440px)
+{
+    h1:active, h1:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+    }
+
+    span:active, span:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+    }
+
+    .nft:active, .nft:hover{
+        cursor: pointer;
+        filter: opacity(0.5) brightness(1.5) drop-shadow(0 0 0 hsl(178, 100%, 50%));
+    }
+    /*
+    .view {
+        display: block;
+        margin-left: 7.7rem;
+        margin-top: 8rem;
+        z-index: 10;
+        position: absolute;
+        cursor: pointer;
+    }
+    */
+}
